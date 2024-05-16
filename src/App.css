@@ -1,0 +1,397 @@
+.app-container {
+  display: flex;
+  flex-direction: column; /* 如果您希望子元素垂直堆叠 */
+  height: 100vh;
+  overflow: hidden; /* 避免在app容器级别出现滚动 */
+  background-color: #fff;
+}
+
+#Navigation {
+  display: flex; /* 设定为弹性盒子 */
+  flex-direction: column; /* 子元素垂直排列 */
+  gap: 20px; /* 子元素之间间隔20px，这个属性在现代浏览器中得到支持 */
+  /* margin-top: 63px; */
+}
+#NavigationCard {
+  display: flex; /* 设定为弹性盒子 */
+  flex-direction: column; /* 子元素垂直排列 */
+  gap: 20px; /* 子元素之间间隔20px，这个属性在现代浏览器中得到支持 */
+}
+#NavigationItem {
+  border: 2px solid lightgray; /* 设置边框宽度为2px，颜色为浅灰色 */
+
+  justify-content: center; /* 水平居中子元素 */
+  align-items: center; /* 垂直居中子元素 */
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 4px;
+  padding: 12px;
+  /* margin: 12px 20px 12px 12px; */
+}
+.full-height {
+  height: 100%; /* 设置Layout的高度为100% */
+}
+.app-container :where(.css-2i2tap).ant-layout-content {
+  flex: unset;
+}
+
+.sider {
+  height: 100%;
+  overflow: auto; /* 如果内容过多，显示滚动条 */
+}
+
+.content {
+  height: 100%;
+  overflow: auto; /* 如果内容过多，显示滚动条 */
+}
+
+.panel1 {
+  height: 100%;
+  background: #272643;
+  /* border-style: solid; */
+  /* border-color: #fff; */
+  /* border-width: 1px; */
+  /* margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px; */
+  color: #fff;
+  font-family: "Montserrat", sans-serif; /* 添加这一行 */
+  /* border-radius: 5px;
+  box-shadow: 2px 2px 2px #dddddd; */
+}
+
+/* 覆盖panel1中ant-collapse-content的背景色 */
+.ant-collapse-content {
+  background-color: #272643 !important;
+}
+
+.panel-header {
+  background-color: #fff;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  /* margin: 5px;
+  padding-left: 10px;
+  padding-top: 4px;
+  /* border-radius: 5px; */
+  /* height: 30px;
+  font-weight: bold; 这行会使得文本加粗 */
+}
+
+.panel-icon {
+  margin-right: 8px; /* Adjust as needed */
+}
+
+.panel2 {
+  background: #badde8;
+  color: #050404;
+  /* border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px; */
+  /* border-radius: 5px;
+  box-shadow: 2px 2px 2px #dddddd; */
+}
+
+.panel3 {
+  background: #fff;
+  /* border-style: solid;
+  border-color: #fff;
+  border-width: 1px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px; */
+  /* border-radius: 5px;
+  box-shadow: 2px 2px 2px #dddddd; */
+}
+
+.control-row {
+  margin-bottom: 10px; /* 设置control和designer的每一个设置框之间的距离 */
+  font-family: "Montserrat", sans-serif; /* 添加这一行 */
+}
+.control-panel {
+  /* display: flex; */
+  width: 100%;
+  flex-direction: column;
+}
+/* DesignBar.css */
+.control-label {
+  /* display: flex;
+  align-items: center;  */
+  font-size: 14px; /* Set your desired font size */
+  padding-left: 0px;
+  font-family: "Montserrat", sans-serif; /* 添加这一行 */
+  color: #fff;
+}
+
+.control-label-layer2 {
+  display: flex;
+  align-items: center; /* Vertically centers the text with the form controls */
+  font-size: 14px; /* Set your desired font size */
+  padding-left: 15px;
+  font-family: "Montserrat", sans-serif; /* 添加这一行 */
+  color: #fff;
+}
+
+.control-label-layer3 {
+  display: flex;
+  align-items: center; /* Vertically centers the text with the form controls */
+  font-size: 14px; /* Set your desired font size */
+  padding-left: 30px;
+  font-family: "Montserrat", sans-serif; /* 添加这一行 */
+  color: #fff;
+}
+.control-label-layer4 {
+  display: flex;
+  align-items: center; /* Vertically centers the text with the form controls */
+  font-size: 14px; /* Set your desired font size */
+  padding-left: 45px;
+  font-family: "Montserrat", sans-serif; /* 添加这一行 */
+  color: #fff;
+}
+/* 在全局 CSS 文件中添加 */
+.ant-input-number-handler-wrap {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ant-input-number-handler-up,
+.ant-input-number-handler-down {
+  pointer-events: auto !important;
+}
+
+.draggable {
+  cursor: move; /* 当鼠标悬浮时，显示拖拽光标 */
+}
+
+.card-container {
+  margin-bottom: 100px;
+}
+/* 
+.insight-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+  padding: 2px;
+} */
+
+.hide-border {
+  border: none !important; /* 强制覆盖任何已有的边框样式 */
+}
+
+.custom-dropdown-menu-item {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-dropdown-menu-item span {
+  flex-shrink: 0; /* 防止圆点被压缩 */
+  margin-right: 8px; /* 为圆点和文本添加间隙 */
+}
+
+.custom-dropdown-menu-item div {
+  flex-grow: 1; /* 允许文本占据剩余空间 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.custom-select-multiple .ant-select-selection--multiple {
+  overflow: auto; /* 允许滚动 */
+  max-height: 100px; /* 一个合适的最大高度 */
+}
+
+/* 以下是design相关的样式 */
+.custom-panel-header {
+  font-weight: bold; /* 加粗字体 */
+  color: #050404;
+  background-color: #fff;
+}
+
+/* 覆盖 antd Panel 的默认内边距，减小高度 */
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* 如果你有一个特定的类用于整个 Collapse 组件，也可以这样做 */
+.custom-collapse .ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* 调整 Panel 的内容区域内边距 */
+.ant-collapse-content > .ant-collapse-content-box {
+  padding: 8px;
+}
+
+.ant-collapse {
+  border-radius: 0px !important;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  border-radius: 0px !important;
+}
+
+.ant-collapse .ant-collapse-content {
+  border-radius: 0px !important;
+}
+
+.ant-collapse .ant-collapse-content > .ant-collapse-content-box {
+  border-radius: 0px !important;
+}
+
+.ant-collapse-item-collapsed > .ant-collapse-header {
+  border-radius: 0px !important;
+}
+
+.ant-select .ant-select-selector {
+  width: 100%; /* 确保selector占满整个Select组件的宽度 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+  white-space: nowrap; /* 防止内容换行 */
+  display: flex; /* 使用flex布局 */
+  align-items: center; /* 垂直居中 */
+  text-align: left; /* 文本左对齐 */
+}
+
+.ant-select .ant-select-selection-overflow {
+  width: 100%; /* 确保overflow元素占满selector的宽度 */
+  display: flex; /* 使子元素按行排列 */
+  flex-wrap: nowrap; /* 防止子元素换行 */
+  overflow: hidden; /* 隐藏溢出的内容 */
+  max-width: 100%; /* 防止子元素超出容器宽度 */
+  display: flex; /* 使用flex布局 */
+  align-items: center; /* 垂直居中 */
+  text-align: left; /* 文本左对齐 */
+}
+
+.ant-select .ant-select-selection-overflow-item {
+  max-width: none; /* 移除最大宽度限制 */
+  flex-grow: 1; /* 允许子项根据需要扩展 */
+  margin-right: 0; /* 调整或移除外边距 */
+  flex-shrink: 0; /* 防止项目在溢出容器时缩小 */
+  text-align: left;
+}
+
+/* 在您的全局CSS文件中 */
+.ant-picker {
+  font-size: var(--dynamic-font-size) !important; /* 使用!important来确保覆盖默认样式 */
+  font-weight: var(--dynamic-font-weight);
+  font-style: var(--dynamic-font-style);
+}
+
+/* styles.css */
+.ant-picker input {
+  font-size: var(--dynamic-font-size) !important; /* 使用 CSS 变量 */
+  font-weight: var(--dynamic-font-weight);
+  font-style: var(--dynamic-font-style);
+}
+
+/* 在全局样式文件中 */
+.ant-picker .ant-picker-input > input {
+  font-weight: var(--dynamic-font-weight);
+  font-style: var(--dynamic-font-style);
+  /* text-decoration: var(--dynamic-text-decoration);
+  color: var(--dynamic-font-color);
+  background-color: var(--dynamic-background-color); */
+  /* 模拟边框，实际上为内部input添加了一个外边框 */
+  border: var(--dynamic-text-contour);
+}
+
+/* 更具特异性的CSS选择器来覆盖Ant Design的DatePicker样式 */
+.ant-picker.ant-picker-outlined.date-picker .ant-picker-input input {
+  font-weight: var(--dynamic-font-weight);
+  font-style: var(--dynamic-font-style);
+}
+
+/* Add this to your CSS file */
+.date-picker input {
+  font-weight: var(--dynamic-font-weight);
+  font-style: var(--dynamic-font-style);
+}
+
+/* Add this to your CSS file */
+.date-picker {
+  font-weight: var(--dynamic-font-weight);
+  font-style: var(--dynamic-font-style);
+}
+/* 在您的全局样式文件中，例如 styles.css
+.ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  font-size: var(--dynamic-font-size) !important;
+}
+
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  padding: var(--select-padding) !important;
+} */
+.navigation {
+  width: 200;
+  height: 300;
+}
+.ant-select-selection-overflow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px; /* 控制间距 */
+}
+
+/* #control_bar {
+  flex-basis: 20%;
+  height: 150px;
+}
+#App {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+#bottom {
+  flex-basis: 80%;
+  display: flex;
+  overflow: hidden;
+}
+
+#visualization {
+  flex-basis: 80%;
+  height: 950px;
+  overflow: auto;
+}
+
+#design {
+  flex-basis: 20%;
+  height: 950px;
+}
+.view {
+  margin: 5px;
+  border: 1px solid #ccc !important;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 50%;
+}
+h2 {
+  font-size: 15px;
+  background: #f1f1f1;
+  margin: 0;
+}
+.tooltip {
+  position: absolute;
+  padding: 4px 8px;
+  background-color: #eee8e8;
+  color: #090808;
+  border-radius: 4px;
+  opacity: 0.7;
+  pointer-events: none; /* Ensure it doesn't interfere with other mouse events 
+  transition: opacity 0.2s;
+  display: none; /* Initially hidden 
+} */
+/* .insight_card {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block; /* 使卡片与其他文本/元素并排显示 
+  margin: 5px;
+} */

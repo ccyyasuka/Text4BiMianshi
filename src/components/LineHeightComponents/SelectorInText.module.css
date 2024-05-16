@@ -1,0 +1,55 @@
+/* SelectorInText.module.css
+.customDropdown .ant-select-selection-search-input,
+.customDropdown .ant-select-selection-item,
+.customDropdown .ant-select-selection-placeholder {
+  font-size: var(--dynamic-font-size) !important;
+}
+/* 在您的全局样式文件中，例如 styles.css */
+/* .ant-select-single .ant-select-selector .ant-select-selection-item,
+.ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  font-size: var(--dynamic-font-size) !important;
+}  */
+/* .customSelect .ant-select-selector .ant-select-selection-item, 
+.customSelect .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+    font-size: var(--dynamic-font-size) !important;
+  } */
+
+/* :root{
+  font-weight: var(--dynamic-font-weight) !important;
+  font-style: var(--dynamic-font-style) !important;
+} */
+.customDropdown .ant-select-selector .ant-select-selection-item,
+.customDropdown .ant-select-single .ant-select-selector .ant-select-selection-placeholder {
+  font-size: var(--dynamic-font-size) !important;
+  padding: var(--select-padding-top) var(--select-padding-right) var(--select-padding-bottom) var(--select-padding-left) !important;
+  font-weight: var(--dynamic-font-weight) !important;
+  font-style: var(--dynamic-font-style) !important;
+  /* font-weight: var(--dynamic-font-weight) !important; */
+}
+
+.customDropdownant .ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector {
+  font-weight: var(--dynamic-font-weight) !important;
+}
+
+/* SelectorInText.module.css */
+.customDropdown :global(.ant-select-selection-item) {
+  font-weight: var(--dynamic-font-weight) !important;
+  font-style: var(--dynamic-font-style) !important;
+  text-decoration: var(--dynamic-text-decoration) !important;
+  color: var(--dynamic-font-color) !important;
+  background-color: var(--dynamic-background-color) !important;
+  text-shadow: var(--dynamic-text-contour) !important;
+}
+
+.customDropdown .ant-select .ant-select-arrow {
+  right: 8px !important; /* 调整右边距离以保证箭头不溢出 */
+  top: 50% !important; /* 确保箭头垂直居中 */
+  transform: translateY(-50%) !important;
+  margin-right: 6px !important; /* 调整右外边距以留出空间给箭头 */
+  inset-inline-end: 20px !important;
+}
+
+/* SelectorInText.module.css */
+.customDropdown .ant-select-selector {
+  border: var(--dynamic-text-contour) !important;
+}

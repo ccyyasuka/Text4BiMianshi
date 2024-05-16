@@ -1,0 +1,36 @@
+// export const DifferenceData = {
+//   data: [
+//     { year: 2011, date: "2011-01-01", value: 8321.80096, category: "none" },
+//     { year: 2011, date: "2011-02-01", value: 12417.90698, category: "none" },
+//     { year: 2011, date: "2011-03-01", value: 15303.568259999996, category: "none" },
+//     { year: 2011, date: "2011-04-01", value: 12902.32438, category: "none" },
+//     { year: 2011, date: "2011-05-01", value: 12183.8287, category: "none" },
+//     { year: 2011, date: "2011-06-01", value: 23415.24702, category: "none" },
+//     { year: 2011, date: "2011-07-01", value: 5585.0035199999975, category: "none" },
+//     { year: 2011, date: "2011-08-01", value: 23713.667719999998, category: "none" },
+//     { year: 2011, date: "2011-09-01", value: 35776.88394, category: "none" },
+//     { year: 2011, date: "2011-10-01", value: 25963.41834, category: "none" },
+//     { year: 2011, date: "2011-11-01", value: 32709.17772, category: "none" },
+//     { year: 2011, date: "2011-12-01", value: 40647.984, category: "none" },
+//     { year: 2012, date: "2012-01-01", value: 10401.637639999999, category: "none" },
+//     { year: 2012, date: "2012-02-01", value: 15000.09618, category: "none" },
+//     { year: 2012, date: "2012-03-01", value: 17992.917559999998, category: "none" },
+//     { year: 2012, date: "2012-04-01", value: 17366.96722, category: "none" },
+//     { year: 2012, date: "2012-05-01", value: 29876.70374, category: "none" },
+//     { year: 2012, date: "2012-06-01", value: 34407.15362, category: "none" },
+//     { year: 2012, date: "2012-07-01", value: 15585.38842, category: "none" },
+//     { year: 2012, date: "2012-08-01", value: 43573.87858, category: "none" },
+//     { year: 2012, date: "2012-09-01", value: 27776.18034, category: "none" },
+//     { year: 2012, date: "2012-10-01", value: 30662.8827, category: "none" },
+//     { year: 2012, date: "2012-11-01", value: 31820.7218, category: "none" },
+//     { year: 2012, date: "2012-12-01", value: 32950.751299999996, category: "none" },
+//   ],
+//   tagData: [2011, 2012],
+// }
+export const DifferenceData = {
+  data: [
+    { value: 248940.81, category: "time1" },
+    { value: 307415.82, category: "time2" },
+  ],
+  tagData: [2011, 2012],
+}

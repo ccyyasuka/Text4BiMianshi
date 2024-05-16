@@ -1,0 +1,32 @@
+  .title-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust the space between titles and buttons */
+  }
+
+  .custom-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .custom-btn.active {
+    background-color: #1890ff; /* Ant Design 蓝色 */
+    color: #fff; /* 文字颜色 */
+  }  
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px; /* 减少值以减小间距，甚至可以是0 */
+  }
+  
+  .button-group {
+    display: flex;
+    flex: 1; /* This ensures that each button group can grow and have the same width */
+    justify-content: left; /* This will center the buttons in the space allotted to the button group */
+    gap: 0px; /* This adds space between buttons */
+    margin-right: 20px; 
+    padding-left: 0px;
+    /* margin-bottom: 5px; */
+  }
